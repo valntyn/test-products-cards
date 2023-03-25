@@ -9,9 +9,10 @@ import './FilterBar.scss';
 export const FilterBar = memo(
   () => {
     const [searchParams, setSearchParams] = useSearchParams();
+    const dispatch = useAppDispatch();
+
     const query = searchParams.get('query') || '';
     const [search, setSearch] = useState(query);
-    const dispatch = useAppDispatch();
 
     const debouncedOnChange = useDebouncedCallback((event) => {
       dispatch(setQuery(event.target.value));

@@ -22,12 +22,15 @@ export const Homepage = () => {
   }, []);
 
   const [searchParams] = useSearchParams();
+
   const { isLoad } = useAppSelector(state => state.products);
   const products = useSelector(selectProductsByFilter);
   const quantity = products.length;
+
   const currentPage = +(searchParams.get('page') || DEFAULT_PAGE);
   const itemsPerPage = +(searchParams.get('perPage') || DEFAULT_ITEMS_PER_PAGE);
   const totalPages = Math.ceil(quantity / itemsPerPage);
+
   const lastItemIndex = currentPage * itemsPerPage;
   const firstItemIndex = lastItemIndex - itemsPerPage;
   const currentItem = products.slice(firstItemIndex, lastItemIndex);
