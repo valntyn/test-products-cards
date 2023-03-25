@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/test-products-cards/static/css/main.f5219fda.chunk.css",
+    "main.js": "/test-products-cards/static/js/main.097a90ea.chunk.js",
+    "main.js.map": "/test-products-cards/static/js/main.097a90ea.chunk.js.map",
+    "runtime-main.js": "/test-products-cards/static/js/runtime-main.9cf4dc18.js",
+    "runtime-main.js.map": "/test-products-cards/static/js/runtime-main.9cf4dc18.js.map",
+    "static/js/2.7aedba69.chunk.js": "/test-products-cards/static/js/2.7aedba69.chunk.js",
+    "static/js/2.7aedba69.chunk.js.map": "/test-products-cards/static/js/2.7aedba69.chunk.js.map",
+    "index.html": "/test-products-cards/index.html",
+    "static/css/main.f5219fda.chunk.css.map": "/test-products-cards/static/css/main.f5219fda.chunk.css.map",
+    "static/js/2.7aedba69.chunk.js.LICENSE.txt": "/test-products-cards/static/js/2.7aedba69.chunk.js.LICENSE.txt",
+    "static/media/ProductCard.scss": "/test-products-cards/static/media/cross.a7b1ced7.svg",
+    "static/media/PageNotFound.scss": "/test-products-cards/static/media/error.e12b5e1c.svg",
+    "static/media/FilterBar.scss": "/test-products-cards/static/media/search.77cfd6ee.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9cf4dc18.js",
+    "static/js/2.7aedba69.chunk.js",
+    "static/css/main.f5219fda.chunk.css",
+    "static/js/main.097a90ea.chunk.js"
+  ]
+}
