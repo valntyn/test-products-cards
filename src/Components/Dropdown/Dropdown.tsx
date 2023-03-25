@@ -6,14 +6,12 @@ import './Dropdown.scss';
 type PropTypes = {
   itemsPerPage: number;
   total: number;
-  defaultPage: string;
 };
 
 export const Dropdown: React.FC<PropTypes> = memo(
   ({
     itemsPerPage,
     total,
-    defaultPage,
   }) => {
     const [isOpenPage, setIsOpenPage] = useState(false);
     const [isOpenSort, setIsOpenSort] = useState(false);
@@ -69,7 +67,6 @@ export const Dropdown: React.FC<PropTypes> = memo(
                       key={value}
                       value={value}
                       quantity={total}
-                      defaultPage={defaultPage}
                     />
                   </li>
                 ))}

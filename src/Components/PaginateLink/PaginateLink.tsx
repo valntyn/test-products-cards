@@ -1,16 +1,15 @@
 import { Link, useSearchParams } from 'react-router-dom';
 import { getSearchWith } from '../../helplers/searchHelpers';
+import { DEFAULT_PAGE } from '../../variables';
 import './PaginateLink.scss';
 
 type PropTypes = {
   value: string;
-  defaultPage: string;
   quantity?: number;
 };
 
 export const PaginateLink: React.FC<PropTypes> = ({
   value,
-  defaultPage,
   quantity,
 }) => {
   const [searchParams] = useSearchParams();
@@ -20,14 +19,14 @@ export const PaginateLink: React.FC<PropTypes> = ({
   const getSearchWithItemsPerPage = (itemsPerPage: string) => {
     if (isAll) {
       return getSearchWith(searchParams, {
-        page: defaultPage,
+        page: DEFAULT_PAGE,
         perPage: `${quantity}`,
       });
     }
 
     if (itemsPerPage && !isAll) {
       return getSearchWith(searchParams, {
-        page: defaultPage,
+        page: DEFAULT_PAGE,
         perPage: itemsPerPage,
       });
     }

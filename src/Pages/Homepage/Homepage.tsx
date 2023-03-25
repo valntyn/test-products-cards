@@ -57,7 +57,6 @@ export const Homepage = () => {
         />
         <Dropdown
           total={quantity}
-          defaultPage={DEFAULT_PAGE}
           itemsPerPage={itemsPerPage}
         />
         <Cataloge />
